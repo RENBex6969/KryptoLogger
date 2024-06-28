@@ -20,6 +20,7 @@
 
 > *Misc*
 
+* Membership Type Grabber
 * Profile Link
 * Game Link
 * Executor LVL
